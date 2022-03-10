@@ -2,32 +2,49 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
   <title>Frontend Mentor | Bookmark landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <header>
+    <div class="container">
+      <div class="menuLeft">
+        <img src="assets/images/logo-bookmark.svg" alt="Logotipo do site.">
+      </div>
+      <div class="menuRight">
+        <nav>
+          <ul>
+            <li><a href="#" class="btnMenu">Features</a> </li>
+            <li><a href="#" class="btnMenu">Pricing</a> </li>
+            <li><a href="#" class="btnMenu">Contact</a> </li>
+            <li class="btnLogin"><a href="#" class="textLogin">Login</a> </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+<section class="simpleSection">
+  <div class="simpleContainer">
+    <div class="simpleLeft">
+      A Simple Bookmark Manager
 
-  Features
-  Pricing
-  Contact
-  Login
-
-  A Simple Bookmark Manager
-
-  A clean and simple interface to organize your favourite websites. Open a new 
-  browser tab and see your sites load instantly. Try it for free.
-
-  Get it on Chrome
-  Get it on Firefox
+      A clean and simple interface to organize your favourite websites. Open a new 
+      browser tab and see your sites load instantly. Try it for free.
+    
+      Get it on Chrome
+      Get it on Firefox
+    </div>
+    <div class="simpleRight">
+      <img src="assets/images/illustration-hero.svg" alt="Tela sistema.">
+    </div>
+  </div>
+  <div class="form"></div>
+</section>
+  
 
   Features
 
@@ -130,5 +147,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

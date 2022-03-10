@@ -1,0 +1,84 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap');
+
+header{
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
+}
+.container{
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menuRight nav ul li{
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 20px;
+}
+.btnMenu{
+  text-decoration: none;
+  color: hsl(229, 31%, 21%);
+  font-family: 'Rubik', sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+.btnMenu:hover{
+  color: hsl(0, 94%, 66%);
+}
+.btnLogin{
+  background-color: hsl(0, 94%, 66%);
+  border-radius: 5px;
+  padding: 5px 0px 5px 0px;
+  border: 1px solid hsl(0, 94%, 66%);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.textLogin{
+  padding: 5px 25px 5px 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+}
+.btnLogin:hover{
+  background-color: #fff;
+  border: 1px solid hsl(0, 94%, 66%);
+}
+.textLogin:hover{
+  color:  hsl(0, 94%, 66%);
+}
+/* fim menu */
+
+.simpleSection{
+  background-color: red;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+}
+.simpleContainer{
+  width: 1100px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.simpleRight{
+  z-index: 2;
+}
+.form{
+  border-radius: 0px 0px 0px 100px;
+  width: 500px;
+  height: 250px;
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  right: 0px;
+  top: 300px;
+}
