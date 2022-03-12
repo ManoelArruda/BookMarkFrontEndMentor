@@ -162,3 +162,21 @@ header{
 .btnGetFirefox a:hover{
   color: hsl(229, 31%, 21%);
 }
+
+/* fim simple*/
+
+/* inicio features */
+.featuresTitle{
+  text-align: center;
+  font-family: 'Rubik', sans-serif;
+  font-size: 23px;
+  color: hsl(229, 31%, 21%);
+  font-weight: bold;
+  margin-top: 40px;
+}
+.featureContent{
+  width: 410px;
+}
+.featuresText{
+
+}
