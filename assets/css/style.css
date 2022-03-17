@@ -431,6 +431,7 @@ header{
 /* inicio footer */
 .footer{
   width: 100%;
+  height: 300px;
   display: flex;
   justify-content: center;
   backgound-color: hsl(229, 31%, 21%);
