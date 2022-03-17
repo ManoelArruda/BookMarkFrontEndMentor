@@ -1,14 +1,27 @@
-document.getElementById('tabPattern').click;
-function openTab(event, idTab){
-  var contents = document.getElementById('tabContent');
+document.getElementById("defaultOpen").click();
 
-  for(var i = 0; i < contents.length; i++){
-    contents[i].style.display = 'none';
+function openTab(evt, tabId) {
+  // Declare all variables
+  var i, tabcontent, tablinks;
+
+  // Get all elements with class="tabContent" and hide them
+  tabcontent = document.getElementsByClassName("tabContent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
   }
-  var tabButton = document.getElementsByClassName('tabButton');
-  for(var i = 0; i < tabButton.length; i++){
-    tabButton[i].className = tabButton[i].className.replace('active','');
+
+  // Get all elements with class="tablinks" and remove the class "active"
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
   }
-  document.getElementById(idTab).style.display = 'block';
-  event.currentTarget.className += ' active';
-}
+
+  // Show the current tab, and add an "active" class to the button that opened the tab
+  document.getElementById(tabId).style.display = "block";
+  evt.currentTarget.className += " active";
+}  
+
+// Sessão navegadores
+document.getElementById("firefox").style.marginTop = "80px";
+document.getElementById("opera").style.marginTop = "110px";
+// Fim sessão navegadores

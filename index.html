@@ -43,57 +43,82 @@
       <img src="assets/images/illustration-hero.svg" alt="Tela sistema.">
     </div>
   </div>
-  <div class="form"></div>
+  <div class="simpleForm"></div>
 </section>
   
 <section class="featuresContainer">
-  <p class="featuresTitle">Features</p> 
-  <div class="featureContent"><p class="featureText">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p></div>
+  <div class="featuresForm"></div>
+  <img src="assets/images/illustration-features-tab-1.svg" alt="tela site.">
+  <div class="featuresTop">
+    <p class="featuresTitle">Features</p> 
+    <div class="featuresContent"><p class="featuresText">Our aim is to make it quick and easy for you to access your favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p></div>
+  </div>
+  <!-- TABS -->
   <div class="tab">
-    <button id="tabPattern" class="tabButton" onclick="openTab(event, 'bookmarking')">Simple Bookmarking</button>
-    <button class="tabButton" onclick="openTab(event, 'searching')"> Speedy Searching</button>
-    <button class="tabButton" onclick="openTab(event, 'sharing')">Easy Sharing</button>
+    <button id="defaultOpen" class="tablinks" onclick="openTab(event, 'bookmarking')">Simple Bookmarking</button>
+    <button class="tablinks" onclick="openTab(event, 'searching')"> Speedy Searching</button>
+    <button class="tablinks" onclick="openTab(event, 'sharing')">Easy Sharing</button>
   </div>
   
   <div id="bookmarking" class="tabContent">
-    <p> Bookmark in one click</p>
-      <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
+    <p class="featuresTabContentTitle"> Bookmark in one click</p>
+      <p class="featuresTabContent">Organize your bookmarks however you like. Our simple drag-and-drop interface 
         gives you complete control over how you manage your favourite sites.</p>
-    <div>More Info</div>
+    <div><a href="#">More Info</a></div>
   </div> 
 
   <div id="searching" class="tabContent">
-    <p>Intelligent search</p>
-    <p>Our powerful search feature will help you find saved sites in no time at all. 
+    <p class="featuresTabContentTitle">Intelligent search</p>
+    <p class="featuresTabContent">Our powerful search feature will help you find saved sites in no time at all. 
       No need to trawl through all of your bookmarks.</p>
-      <div> More Info</div>
+      <div><a href="#">More Info</a></div>
   </div>
   
   <div id="sharing" class="tabContent">
-    <p>Share your bookmarks</p>
-    <p>Easily share your bookmarks and collections with others. Create a shareable 
+    <p class="featuresTabContentTitle">Share your bookmarks</p>
+    <p class="featuresTabContent">Easily share your bookmarks and collections with others. Create a shareable 
       link that you can send at the click of a button.</p>
-      <div>More Info</div>
+      <div><a href="#">More Info</a></div>
   </div>
 </section>
 
+<section class="downloadSection">
+  <div class="downloadContainer">
+    
+      <h2 class="downloadTitle">Download the extension</h2>
+      <div class="downloadContent">
+        <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
+        got a favourite you’d like us to prioritize.</p>
+      </div>
+      <div class="downloadCards">
+        <div class="downloadDefaultCard" id="chrome">
+          <img src="assets/images/logo-chrome.svg" alt="Logo navegador Google Chrome.">
+          <p class="downloadCardTitle">Add to Chrome</p>
+          <p class="downloadCardDescription">Minimum version 62</p>
+          <img src="assets/images/bg-dots.svg" alt="Linha pontilhada.">
+          <div><a href="#">Add & Install Extension</a></div>
+        </div>
 
-  Download the extension
+        <div class="downloadDefaultCard" id="firefox">
+          <img src="assets/images/logo-firefox.svg" alt="Logo navegador Mozilla Firefox.">
+          <p class="downloadCardTitle">Add to Firefox</p>
+          <p class="downloadCardDescription">Minimum version 55</p>
+          <img src="assets/images/bg-dots.svg" alt="Linha pontilhada.">
+          <div><a href="#">Add & Install Extension</a></div>
+        </div>
 
-  We’ve got more browsers in the pipeline. Please do let us know if you’ve 
-  got a favourite you’d like us to prioritize.
-
-  Add to Chrome
-  Minimum version 62
-  Add & Install Extension
-
-  Add to Firefox
-  Minimum version 55
-  Add & Install Extension
-
-  Add to Opera
-  Minimum version 46
-  Add & Install Extension
+        <div class="downloadDefaultCard" id="opera">
+          <img src="assets/images/logo-opera.svg" alt="Logo navegador Opera.">
+          <p class="downloadCardTitle">Add to Opera</p>
+          <p class="downloadCardDescription">Minimum version 46</p>
+          <img src="assets/images/bg-dots.svg" alt="Linha pontilhada.">
+          <div><a href="#">Add & Install Extension</a></div>
+        </div>
+      </div>
+  </div>
+</section>
+  <section class="teste">
+    
 
   Frequently Asked Questions
   
@@ -149,6 +174,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer>
+  </section>
 
   <script src="assets/js/script.js"></script>
 </body>

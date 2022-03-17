@@ -77,7 +77,7 @@ header{
   align-items: center;
   width: 60%;
 }
-.form{
+.simpleForm{
   border-radius: 100px 0px 0px 100px;
   width: 450px;
   height: 250px;
@@ -174,9 +174,215 @@ header{
   font-weight: bold;
   margin-top: 40px;
 }
-.featureContent{
-  width: 410px;
+.featuresContent{
+  width: 430px;
+}
+.featuresTop{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 .featuresText{
+  color: hsl(229, 8%, 60%);
+  margin-top: 20px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+.featuresForm{
+  border-radius: 0px 100px 100px 0px;
+  width: 500px;
+  height: 250px;
+  background-color: hsl(231, 69%, 60%);
+  position: absolute;
+  left: 0px;
+  top: 930px;
+  z-index: -1;
+}
+.featuresContainer img{
+  width: auto;
+  height: 250px;
+  border: none;
+  z-index: 1;
+  margin-top: 300px;
+  position: absolute;
+  left: 200px;
+}
+.featuresTabContentTitle{
+  color: hsl(229, 31%, 21%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+}
+.featuresTabContent{
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  color: hsl(229, 8%, 60%);
+  margin-top: 30px;
+}
+.tabContent div{
+  margin-top: 30px;
+  width: 150px;
+  border: 1px solid hsl(231, 69%, 60%);
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.tabContent div a{
+  padding: 10px 25px 10px 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+.tabContent div:hover{
+  background-color: #fff;
+  border: 1px solid hsl(231, 69%, 60%);
+}
+.tabContent div a:hover{
+  color: hsl(231, 69%, 60%);
+}
+/* TABS */
+.tab {
+  margin-top: 50px;
+  overflow: hidden;
+  border: none;
+  display: flex;
+  justify-content: center;
+}
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: transparent;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 50px;
+  transition: 0.3s;
+  color: hsl(229, 8%, 60%);
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+.tabContent {
+  animation: fadeEffect 1s; /* Fading effect takes 1 second */
+}
+/* Go from zero to full opacity */
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
 
+/* Change background color of buttons on hover */
+.tab button:hover {
+ color: hsl(0, 94%, 66%);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  border-bottom: 3px solid hsl(0, 94%, 66%);
+  color:hsl(229, 31%, 21%);
+}
+
+/* Style the tab content */
+.tabContent {
+  display: none;
+  padding: 6px 12px;
+  width: 380px;
+  position: absolute;
+  right: 130px;
+  margin-top: 120px;
+}
+
+/* fim features */
+
+/* inicio download */
+.downloadSection{
+  margin-top: 500px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.downloadContainer{
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.downloadTitle{
+  color: hsl(229, 31%, 21%);
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+.downloadContent{
+  display: flex;
+  justify-content: center;
+  color: hsl(229, 8%, 60%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  width: 450px;
+  margin-top: 30px;
+}
+.downloadContent p{
+  text-align: center;
+}
+.downloadCards{
+  display: flex;
+}
+.downloadDefaultCard{
+  margin-top: 50px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 20px;
+  width: 300px;
+  height: 350px;
+  box-shadow: 0px 5px 5px 3px rgba(0, 0, 0, 0.2);
+}
+.downloadCardTitle{
+  margin-top: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: hsl(229, 31%, 21%);
+}
+.downloadCardDescription{
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+  color: hsl(229, 8%, 60%);
+}
+.downloadDefaultCard div{
+  margin-top: 30px;
+  width: 230px;
+  border: 1px solid hsl(231, 69%, 60%);
+  background-color: hsl(231, 69%, 60%);
+  border-radius: 5px;
+  padding: 10px 0px 10px 0px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.downloadDefaultCard div a{
+  padding: 10px 25px 10px 25px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+}
+.downloadDefaultCard div:hover{
+  background-color: #fff;
+  border: 1px solid hsl(231, 69%, 60%);
+}
+.downloadDefaultCard div a:hover{
+  color: hsl(231, 69%, 60%);
 }
