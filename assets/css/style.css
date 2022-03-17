@@ -427,3 +427,34 @@ header{
 }
 
 /* fim sessao question */
+
+/* inicio footer */
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  backgound-color: hsl(229, 31%, 21%);
+}
+.footerContainer{
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+}
+.footerLeft{
+  display: flex;
+  justify-content: center;
+}
+.footerLeft nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 20px;
+}
+.footerLeft nav ul li a{
+  text-decoration: none;
+  color: hsl(229, 8%, 60%);
+  font-family: 'Rubik', sans-serif;
+  font-size: 15px;
+}
+.footerLeft nav ul li a:hover{
+  color: hsl(0, 94%, 66%);
+}
