@@ -386,3 +386,44 @@ header{
 .downloadDefaultCard div a:hover{
   color: hsl(231, 69%, 60%);
 }
+/* fim sessao download */
+
+/* inicio sessao questions */
+
+.questionsSection{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+}
+.questionsContainer{
+  width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.questionsTitle{
+  font-family: 'Rubik', sans-serif;
+  color: hsl(229, 31%, 21%);
+  font-weight: bold;
+}
+.questionsDescription{
+  width: 410px;
+  margin-top: 30px;
+}
+.questionsDescription p{
+  font-family: 'Rubik', sans-serif;
+  color: hsl(229, 8%, 60%);
+  text-align: center;
+  font-size: 15px;
+}
+
+/* questions tabs */
+.questionsTab{
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+}
+
+/* fim sessao question */
