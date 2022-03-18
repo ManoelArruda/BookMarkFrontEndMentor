@@ -125,33 +125,23 @@
       <p>Here are some of our FAQs. If you have any other questions you'd like 
         answered please feel free to email us.</p>
     </div>
-    <div class="questionsTab">
-      <button class="questionsTabLinks" onclick="openTabQuestions(event, '')">
-        <!-- Question 1 -->
-        What is Bookmark?
-      </button>
-      <button class="questionsTabLinks" onclick="openTabQuestions(event, '')"> 
-      <!-- Question 2 -->
-      How can I request a new browser?
-      </button>
-      <button class="questionsTabLinks" onclick="openTabQuestions(event, '')">
-      <!-- Question 3 -->
-      Is there a mobile app?
-      </button>
-      <button class="questionsTabLinks" onclick="openTabQuestions(event, '')">
-      <!-- Question 4 -->
-      What about other Chromium browsers?
-      </button>
-    </div>
-
-    <div id="question1" class="tabContentQuestions">
+    
+    <button class="accordion">
+      <!-- Question 1 -->
+      What is Bookmark?
+    </button>
+    <div class="panel">
       <p> 
         <!-- Answer 1 -->
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
         justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
       </p>
     </div> 
-    <div id="question2" class="tabContentQuestions">
+    <button class="accordion"> 
+      <!-- Question 2 -->
+      How can I request a new browser?
+      </button>
+    <div class="panel">
       <p> 
         <!-- Answer 2 -->
         Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
@@ -160,7 +150,11 @@
         Mauris augue massa, ultricies non ligula. Suspendisse imperdiet.
       </p>
     </div> 
-    <div id="question3" class="tabContentQuestions">
+    <button class="accordion">
+      <!-- Question 3 -->
+      Is there a mobile app?
+      </button>
+    <div class="panel">
       <p> 
         <!-- Answer 3 -->
         Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
@@ -168,21 +162,23 @@
         sollicitudin ex et ultricies bibendum.
       </p>
     </div> 
-    <div id="question4" class="tabContentQuestions">
+    <button id="accordion" class="accordion">
+      <!-- Question 4 -->
+      What about other Chromium browsers?
+      </button>
+    <div class="panel">
       <p> 
         <!-- Answer 4 -->
         Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
         vitae neque eget nisl gravida pellentesque non ut velit.
       </p>
     </div>      
-
-        More Info
-    
+    <div class="moreInfoQuestions"><a href="#">More Info</a></div>
   </div>
 </section>
   <section class="contact">
     <div class="contactContainer">
-      <p>35,000+ already joined</p>
+      <p><span data-numero>35000</span>+ already joined</p>
 
       <h2>Stay up-to-date with what we're doing</h2>
       <form action="" method="post">
@@ -191,10 +187,8 @@
       </form>
       
     </div>
-  
-  </section>
+  </section> 
 
-  
   <footer>
     <div class="footerContainer">
       <div class="footerLeft">
