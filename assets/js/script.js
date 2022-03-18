@@ -25,3 +25,13 @@ function openTab(evt, tabId) {
 document.getElementById("firefox").style.marginTop = "80px";
 document.getElementById("opera").style.marginTop = "110px";
 // Fim sessão navegadores
+
+//formulario
+function enviar(){
+  const email = document.getElementById("email");
+  if(email.value == ""){
+    alert("Por favor, digite um email válido.");
+  }else{
+    alert("Contato realizado com sucesso.");
+  }
+}
