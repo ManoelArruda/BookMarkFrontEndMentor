@@ -576,7 +576,6 @@ footer{
 }
 .mediaSocial:hover{
   fill: hsl(0, 94%, 66%);
-  max-width: ;
 }
 /* fim footer */
 
@@ -598,5 +597,15 @@ footer{
   }
   header{
     width: 100vw;
+  }
+  .featuresForm{
+    width: 200px;
+    height: 150px;
+    top: 1200px;
+  }
+  .featuresContainer img{
+    height: 140px;
+    top: 870px;
+    left: 10px;
   }
 }
