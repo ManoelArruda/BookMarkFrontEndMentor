@@ -576,5 +576,27 @@ footer{
 }
 .mediaSocial:hover{
   fill: hsl(0, 94%, 66%);
+  max-width: ;
 }
 /* fim footer */
+
+@media (min-width:375px) and (max-width:620px) {
+  .menuRight{
+    display: none;
+  }
+  .simpleContainer{
+    flex-direction: column-reverse;
+  }
+  .simpleLeft, .simpleRight{
+    border: 1px solid red;
+  }
+  .downloadCards{
+    flex-direction: column;
+  }
+  .tab{
+    flex-direction: column;
+  }
+  header{
+    width: 100vw;
+  }
+}
