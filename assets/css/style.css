@@ -579,7 +579,7 @@ footer{
 }
 /* fim footer */
 
-@media (min-width:375px) and (max-width:620px) {
+@media (min-width:375px) and (max-width:800px) {
   .menuRight{
     display: none;
   }
