@@ -438,7 +438,7 @@ header{
   font-weight: bold;
 }
 
-.active, .accordion:hover {
+.activee, .accordion:hover {
   color: hsl(0, 94%, 66%);
 }
 
@@ -450,7 +450,7 @@ header{
   margin-left: 5px;
 }
 
-.active:after {
+.activee:after {
   content: "\02c4";
   color: hsl(0, 94%, 66%);
 }
@@ -586,17 +586,26 @@ footer{
   .simpleContainer{
     flex-direction: column-reverse;
   }
-  .simpleLeft, .simpleRight{
-    border: 1px solid red;
+  .simpleForm{
+    width: 320px;
+    height: 220px;
+    top: 200px;
+  }
+  .simpleRight{
+    width: 50%;
+  }
+  .simpleRight img{
+    position: absolute;
+    width: auto;
+    height: 250px;
+    top: 80px;
+    left: 50px;
   }
   .downloadCards{
     flex-direction: column;
   }
   .tab{
     flex-direction: column;
-  }
-  header{
-    width: 100vw;
   }
   .featuresForm{
     width: 200px;
@@ -607,5 +616,28 @@ footer{
     height: 140px;
     top: 870px;
     left: 10px;
+  }
+  .footerLeft{
+    flex-direction: column;
+  }
+  .footerContainer{
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerLeft nav{
+    margin-top: 30px;
+  }
+  .footerLeft nav ul li{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin-left: 0px;
+  }
+  .footerRight{
+    margin-top: 50px;
+  }
+  footer{
+    height: 500px;
   }
 }
